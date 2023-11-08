@@ -480,3 +480,48 @@ hr{
         border-radius: 10px;
     }
 }
+
+@media only screen and (max-width:500px) {
+
+    html{
+        font-size: 48.1%;
+    }
+
+    .skills .container{
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .projects .container{
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .follow .fo-link {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+@media only screen and (max-width:365px) {
+    html{
+        font-size: 46.2%;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    html{
+        font-size: 35%;
+    }
+
+    .skills .container{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .projects .container{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .follow .fo-link {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
